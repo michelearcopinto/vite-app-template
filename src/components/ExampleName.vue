@@ -16,6 +16,6 @@ export default {
 
 h1 {
   color: $font-color-second;
-  @include main-font;
+  @include main-font-start;
 }
 </style>
