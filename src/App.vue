@@ -12,6 +12,9 @@ export default {
       store,
     };
   },
+  created() {
+    this.requestRandomMail();
+  },
   methods: {
     requestRandomMail() {
       axios
@@ -27,7 +30,7 @@ export default {
 <template>
   <h1>Hello World</h1>
   <h2>{{ store.helloValue }}</h2>
-  <h3>{{ `axios request: ${store.randomMail}` }}</h3>
+  <h3>axios request: {{ store.randomMail }}</h3>
   <ExampleName />
 </template>
 
