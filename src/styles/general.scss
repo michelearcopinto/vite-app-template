@@ -25,6 +25,10 @@ a {
   }
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 h1 {
   color: $font-color;
   @include main-font-center;
